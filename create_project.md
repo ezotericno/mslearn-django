@@ -13,3 +13,19 @@ ___
 ```python
 'hello_world.apps.HelloWorldConfig',
 ```
+- The file should now contain code looking like the following
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'hello_world.apps.HelloWorldConfig',
+]
+```
+
+___
+## Creating a view
+- 
