@@ -28,4 +28,21 @@ INSTALLED_APPS = [
 
 ___
 ## Creating a view
-- 
+- Within the views.py file add the following
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, world!")
+```
+
+- Create the route for the request
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+```
